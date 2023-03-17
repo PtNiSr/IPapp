@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">IPapp</string>
+    <string name="ipString">IP: %s</string>
+    <string name="cityString">City: %s</string>
+    <string name="regionString">Region: %s</string>
+    <string name="countryString">Country: %s</string>
+    <string name="orgString">Org: %s</string>
+    <string name="postal_codeString">Postal code: %s</string>
+    <string name="time_zoneString">Time zone: %s</string>
+    <string name="ip_string2">IP: %s</string>
+    <string name="city_string2">City: %s</string>
+    <string name="region_string2">Region: %s</string>
+    <string name="country_string2">Country: %s</string>
+    <string name="org_string2">Org: %s</string>
+    <string name="postal_code_string2">Postal Code: %s</string>
+    <string name="time_zonep_string2">Time ZoneP: %s</string>
+</resources>

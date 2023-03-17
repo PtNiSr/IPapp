@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Saved_info">
+
+    <TextView
+        android:id="@+id/textViewIP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ip_string2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCity2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_string2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRegion2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIP2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewIP2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIP2" />
+
+    <TextView
+        android:id="@+id/textViewRegion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/region_string2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCountry2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCity2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewCity2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCity2" />
+
+    <TextView
+        android:id="@+id/textViewCountry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country_string2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOrg2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRegion2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewRegion2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegion2" />
+
+    <TextView
+        android:id="@+id/textViewOrg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/org_string2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPostalCode2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCountry2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewCountry2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountry2" />
+
+    <TextView
+        android:id="@+id/textViewPostalCode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/postal_code_string2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTimeZone2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOrg2"
+        app:layout_constraintStart_toStartOf="@+id/textViewOrg2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrg2" />
+
+    <TextView
+        android:id="@+id/textViewTimeZone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_zonep_string2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBack2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPostalCode2"
+        app:layout_constraintStart_toStartOf="@+id/textViewPostalCode2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPostalCode2" />
+
+    <Button
+        android:id="@+id/buttonBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Main"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTimeZone2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewTimeZone2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeZone2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

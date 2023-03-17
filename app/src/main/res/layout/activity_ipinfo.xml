@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".IPinfo">
+
+    <TextView
+        android:id="@+id/textViewIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ipString"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cityString"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRegion"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewIP"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIP" />
+
+    <TextView
+        android:id="@+id/textViewRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regionString"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCountry"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewCity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCity" />
+
+    <TextView
+        android:id="@+id/textViewCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countryString"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOrg"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRegion"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewRegion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegion" />
+
+    <TextView
+        android:id="@+id/textViewOrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orgString"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPostal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCountry"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewCountry"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountry" />
+
+    <TextView
+        android:id="@+id/textViewPostal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/postal_codeString"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTimeZone"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOrg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewOrg"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrg" />
+
+    <TextView
+        android:id="@+id/textViewTimeZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_zoneString"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPostal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewPostal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPostal" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBack"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTimeZone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewTimeZone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeZone" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To main"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSave"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonSave"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/smartphone_on_black_" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="80dp"
+        android:text="Ni"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="loading..."
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="58,7"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
